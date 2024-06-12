@@ -130,9 +130,10 @@ select {
   /* border-top-left-radius: 1cap; */
 }
 
-#myDropdown0, #myDropdown1, #myDropdown2 {
-  width: 20%;
-
+#myDropdown0, #myDropdown1, #myDropdown2, #myDropdown3 {
+  width: 15%;
+  color: #4d4d4db4;
+  font-weight: bolder;
 }
 
 .plus-icon {
