@@ -1,0 +1,183 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap:nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  /* background-color: rgba(127, 255, 212, 0.667); */
+}
+/* -------- Title ------- */
+#title-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap:nowrap;
+  justify-content:flex-start;
+  align-content: stretch;
+  background-color: #666666;
+}
+
+.title {
+  position: flex;
+  /* margin-top:auto; */
+  display: flex;
+  font-size: xx-large;
+  font-weight: bolder;
+  align-items: center;  /* 垂直置中 */
+  justify-content: center;  /* 水平置中 */
+  flex-direction: column;
+  color: #fff;
+}
+
+.subtitle {
+  color: #fff;
+}
+/* -------- Title ------- */
+/* -------- Navigation ------- */
+#navigation-container {
+  background-color: rgba(0, 0, 0, 0.367);
+  color: black;
+  font-size:medium;
+  display: flex;
+  margin: 5px;
+
+  flex-wrap:nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  flex-direction: row;
+}
+
+#nav-component {
+  margin: 5px;
+}
+
+.space {
+  width: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-0 {
+  /* position: relative; */
+  font-weight:bolder;
+  font-size:xx-large;
+}
+
+.nav-1 {
+  cursor: pointer;
+}
+
+.space-45 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-5 {
+  border-radius: 10%;
+  width: 3%;
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.nav-6 {
+  border-radius: 10%;
+  width: 4%;
+  height: 75%;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #000;
+  color: #fff;
+}
+.nav-7 {
+  background-color: #6ce45a;
+  border: #000;
+  border-radius:100%;
+  width: 2.3%;
+  height: 75%;
+}
+.nav-８ {
+  /* background-color: #6ce45a; */
+  /* border: #000; */
+  /* border-radius:100%; */
+  color: #000;
+  font-weight: bolder;
+  width: 2.3%;
+  height: 75%;
+}
+
+/* -------- Navigation ------- */
+/* -------- Dropdown ------- */
+.dropdown-container {
+  display: flex;
+  height: 50px;
+  /* padding: 10px; */
+  /* background-color: #2a60935c; */
+  flex-direction:row;
+  margin-bottom: 2%;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  align-content: flex-start;
+}
+
+select {
+  border-radius: 2cap;
+  /* border-top-left-radius: 1cap; */
+}
+
+#myDropdown0, #myDropdown1, #myDropdown2, #myDropdown3 {
+  width: 15%;
+  color: #4d4d4db4;
+  font-weight: bolder;
+}
+
+.plus-icon {
+  display: flex;
+  align-items: center;  /* 垂直置中 */
+  justify-content: center;  /* 水平置中 */
+  width: 5cap;
+  border-radius: 5cap;
+}
+/* -------- Dropdown ------- */
+
+.flex-container {
+  display: flex;
+  height: 300px;
+  /* padding: 10px; */
+  /* background-color: #526E89; */
+  flex-direction:column;
+
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  align-content: stretch;
+}
+
+
+.item {
+  /* width: 25%; */
+  background-color: #00000078;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 2rem;
+  padding:10px;
+}
+
+.generate-button {
+  width: 10%;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgb(90, 90, 210);
+  color: #fff;
+  font-weight: bolder;
+  position: relative;
+  right: 0%;
+  left: 45%;
+}

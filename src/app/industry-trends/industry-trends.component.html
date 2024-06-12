@@ -1,0 +1,77 @@
+<!-- <button onclick="OpenModal()" routerLink="/home">Show PopUp</button> -->
+<div class="page-container">
+
+  <div class="flex-container">
+    <div class="item" id="title-container">
+      <div class="title">Welcome to Occupational Analysis Website</div>
+      <p class="subtitle">Track your business performance with detailed insights</p>
+    </div>
+    <div class="item" id="navigation-container">
+      <div class="nav-0" id="nav-component" routerLink="/">Menu</div>
+      <div class="space" id="nav-component">|</div>
+
+      <div class="nav-1" id="nav-component" routerLink="/multiple">Multiple Company</div>
+      <div class="space" id="nav-component">|</div>
+
+      <div class="nav-2" id="nav-component" routerLink="/single">Single Company</div>
+      <div class="space" id="nav-component">|</div>
+
+      <div class="nav-3" id="nav-component" routerLink="/trends">Industry Trends Recently</div>
+      <div class="space" id="nav-component">|</div>
+
+      <div class="nav-4" id="nav-component" routerLink="/graduates">Number of Graduates Recently</div>
+      <div class="space-45" id="nav-component"></div>
+
+      <button class="nav-5" id="nav-component"> ... </button>
+      <button class="nav-6" id="nav-component"> Share </button>
+      <div class="nav-7" id="nav-component"></div>
+      <div class="nav-8" id="nav-component">﹀</div>
+
+
+    </div>
+
+  </div>
+
+  <div class="dropdowns-wrapper">
+    <div *ngFor="let container of dropdownContainers; let i = index" class="dropdown-container">
+      <select id="myDropdown0" #dropdown0 (change)="onDropdownChange0(dropdown0, i)">
+        <option value="">大分類</option>
+        <option *ngFor="let bigName of container.bigNames" [value]="bigName">{{ bigName }}</option>
+      </select>
+
+      <div class="space"></div>
+
+      <select id="myDropdown1" #dropdown1 (change)="onDropdownChange1(dropdown1, i)">
+        <option value="">中分類</option>
+        <option *ngFor="let midName of container.midNames" [value]="midName">{{ midName }}</option>
+      </select>
+
+      <div class="space"></div>
+
+      <select id="myDropdown2" #dropdown2 (change)="onDropdownChange2(dropdown2, i)">
+        <option value="">小分類</option>
+        <option *ngFor="let smallName of container.smallNames" [value]="smallName">{{ smallName }}</option>
+      </select>
+
+      <div class="space"></div>
+
+      <select id="myDropdown3" #dropdown3 (change)="onDropdownChange3(dropdown3, i)">
+        <option value="">詳細分類</option>
+        <option *ngFor="let detailName of container.detailNames" [value]="detailName">{{ detailName }}</option>
+      </select>
+
+
+      <div class="space"></div>
+      <button class="plus-icon" (click)="addDropdownContainer()">&#x271A;</button>
+    </div>
+
+
+
+    <div *ngFor="let container of dropdownContainers; let i = index">
+      <p>選中的文字：{{ container.selectedOptionText0 }}, {{ container.selectedOptionText1 }}, {{ container.selectedOptionText2 }}, {{container.selectedOptionText3}}</p>
+    </div>
+  </div>
+  <button class="generate-button">建立圖表</button>
+</div>
+
+
